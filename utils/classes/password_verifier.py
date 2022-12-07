@@ -1,4 +1,5 @@
 from rest_framework.exceptions import ValidationError
+import ipdb
 
 
 class PasswordVerifier:
@@ -147,8 +148,21 @@ class PasswordVerifier:
         password = data["password"]
 
         for rule_dict in rules:
-            if not (type(rule_dict) is dict):
+            if not isinstance(rule_dict, dict):
                 raise ValidationError({"message": f"{rule_dict} is not a dictionary"})
+
+            if not rule_dict.get("rule"):
+                raise ValidationError(
+                    {"message": "Rule in wrong format. Missing 'rule' key"}
+                )
+
+            if not rule_dict.get("value") and rule_dict.get("value") != 0:
+                raise ValidationError(
+                    {"message": "Rule in wrong format. Missing 'value' key"}
+                )
+
+            if not isinstance(rule_dict["value"], int):
+                raise ValidationError({"message": "Value must be an integer"})
 
             rule = rule_dict["rule"]
             value = rule_dict["value"]
