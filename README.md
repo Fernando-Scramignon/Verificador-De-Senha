@@ -136,4 +136,10 @@ Se uma regra falhar, a chave verify da resposta vem falsa e o nome da regra vai 
 - noRepeated: não tenha nenhum caractere repetido em sequência ( ou seja, "aab" viola esta
 condição, mas "aba" não)
 
+## Testes
 
+Para rodar os testes use o comando:
+
+```python
+python manage.py test
+```
