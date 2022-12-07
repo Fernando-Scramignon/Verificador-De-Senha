@@ -8,6 +8,7 @@ Um projeto criado para um desafio técnico. É uma API que permite verificar a f
   - [Com Docker](#usando-docker-e-docker-compose-recomendado)
 - [Como utilizar](#como-utilizar)
 - [Referência de regras](#referência-de-regras)
+- [Testes](#testes)
 
 ## Tecnologias
 - [Django](https://www.djangoproject.com/)
