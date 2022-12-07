@@ -2,7 +2,7 @@ from django.test import TestCase
 from utils.classes.password_verifier import PasswordVerifier
 
 """
-To run tests type in the terminal: python manage.py test
+Para rodar os testes rode o comando: python manage.py test
 """
 
 
