@@ -20,7 +20,7 @@ class VerifierViews(APIView):
         """
         Cria uma instância do validador de senhas se a requisição conter informações erradas
         ele levanta um validationError que é capturado automaticamente pelo django e retorna uma
-        resposta 400 BAD REQUEST. Caso de tudo certo o resultado da verificação fica na propriedade
+        resposta 400 BAD REQUEST. Caso tudo esteja certo,  o resultado da verificação fica na propriedade
         verification_info (mesmo se alguma validação falhou).
         """
         passwordVerifier = PasswordVerifier(request.data)
