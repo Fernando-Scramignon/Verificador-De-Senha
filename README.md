@@ -18,6 +18,33 @@ Um projeto criado para um desafio técnico. É uma API que permite verificar a f
 Primeiramente clone o repositório na máquina local.
 Têm duas maneiras de rodar o projeto. Uma com **docker**(recomendado) e outra sem.
 
+### Usando docker e docker compose (recomendado)
+Desse modo é necessário ter instalado o [docker](https://docs.docker.com/get-docker/) e o [docker compose](https://docs.docker.com/compose/install/#install-compose).
+
+Você pode criar o ambiente virtual e instalar as depêndencias para parar os erros de import, mas não é necessário.
+
+Ambiente Virtual:
+```python
+python -m venv venv
+```
+Instalando dependências:
+```python
+pip install -r requirements.txt
+```
+
+Utilize o comando docker compose up
+
+```python
+docker compose up
+```
+
+Com isso o projeto já está funcionando em um container docker sem precisar de mais configurações</br>
+Caso queria excluir os containers execute:
+
+```python
+docker compose down
+```
+
 ### Sem usar o docker
 Crie o ambiente virtual com o comando
 
@@ -56,32 +83,6 @@ python manage.py runserver
 ```
 obs: Irá rodar na porta 8080
 
-### Usando docker e docker compose (recomendado)
-Desse modo é necessário ter instalado o [docker](https://docs.docker.com/get-docker/) e o [docker compose](https://docs.docker.com/compose/install/#install-compose).
-
-Você pode criar o ambiente virtual e instalar as depêndencias para parar os erros de import, mas não é necessário.
-
-Ambiente Virtual:
-```python
-python -m venv venv
-```
-Instalando dependências:
-```python
-pip install -r requirements.txt
-```
-
-Utilize o comando docker compose up
-
-```python
-docker compose up
-```
-
-Com isso o projeto já está funcionando em um container docker sem precisar de mais configurações</br>
-Caso queria excluir os containers execute:
-
-```python
-docker compose down
-```
 
 ## Como utilizar
 
