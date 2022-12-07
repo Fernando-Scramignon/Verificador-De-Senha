@@ -15,7 +15,4 @@ RUN pip install -U pip
 RUN pip install -r requirements.txt
 
 
-# Com o docker compose essa parte não é necessária
-# caso queria usar sem o docker compose é só descomentar essa linha
-
-# CMD ["python", "manage.py", "runserver", "0.0.0.0:8080"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8080"]
