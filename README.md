@@ -15,6 +15,7 @@ Um projeto criado para um desafio técnico. É uma API que permite verificar a f
 - [Django Rest Framework](https://www.django-rest-framework.org/)
 - [Python](https://www.python.org/)
 - [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
 
 ## Rodando o projeto
 Primeiramente clone o repositório na máquina local.
